@@ -1,0 +1,196 @@
+body {
+  background-color: #042846;
+  font-family: sans-serif;
+}
+
+header {
+  height: 14vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #008cff;
+  color: white;
+  padding: 0em 0em 1.5em 1.5em;
+}
+
+.loginContainer {
+  display: flex;
+  align-self: flex-end;
+  margin: .5em 1.5em 0em 0em;
+}
+
+nav {
+  height: 14vh;
+  display: flex;
+  align-items: flex-end;
+}
+
+button {
+  background-color: #008cff;
+  color: 	white;
+  border: none;
+  font-size: 1em;
+  margin-right: .5em;
+  margin-left: .5em;
+}
+
+.logos {
+  max-width: 3vh;
+  max-height: 3vh;
+  width: auto;
+  height: auto;
+}
+
+.navContainer {
+  display:flex;
+  align-self: flex-end;
+  width: 100%;
+}
+
+.logoContainer {
+  display: flex;
+  justify-self: flex-end;
+  width: 27%
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.headingContainer {
+  height: 11vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1.5em;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 100;
+  color: white;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(2,1fr);
+  justify-items: center;
+}
+
+section {
+  height: 50vh;
+  width: 23vw;
+  background-color: #ffffff;
+  margin: 0vh .5vw 2vh .5vw;
+  border-radius: .2em;
+}
+
+.photo {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.arrow {
+  margin-top: 1.5vh;
+  margin-left: 1vw;
+  font-size: 2.5em;
+}
+
+.diverge {
+  height: 18vh;
+  aspect-ratio: 485∶323;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5vh 1vw 0vh 0vw;
+  font-size: 1.2em;
+}
+
+.textBlock {
+  margin-left: 1em;
+}
+
+.bikeTitle {
+  font-size: 1.5em;
+  margin-top: 1em;
+}
+
+.bikeTime {
+  font-size: .9em;
+  font-style: italic;
+  margin-top: .1em;
+  margin-bottom: .7em;
+  opacity: 50%;
+}
+
+.bikeURL {
+  font-size: 1.3em;
+  font-style: italic; 
+}
+
+.bikePrice {
+  font-size: 1em;
+  margin-top: 1em;
+}
+
+.bikeDollars {
+  font-size: 1.5em;
+  margin-top: .3em;
+}
+
+.bikeCondition {
+  font-size: 1em;
+  margin-top: .9em;
+}
+
+.conditionScore {
+  font-size: 1.8em;
+  margin-top: .2em;
+  color: #2A7BA8;
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: .5px;
+    justify-items: center;
+  }
+
+  section {
+    height: 50vh;
+    width: 46vw;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+  }
+}
+
+.logos {
+  width: 3vw;
+  height: auto;
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(8,1fr);
+    grid-gap: .5px;
+    justify-items: center;
+  }
+
+  section {
+    height: 50vh;
+    width: 92vw;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+  }
+}
+
